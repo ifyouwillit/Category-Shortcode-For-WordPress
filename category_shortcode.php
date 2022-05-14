@@ -4,7 +4,7 @@
    Plugin URI: https://github.com/ifyouwillit/Category-Shortcode-For-WordPress
    description: Plugin that creates a shortcode [cat_with_description] to display all categories for the current post.
   a plugin to create awesomeness and spread joy
-   Version: 1.2
+   Version: 1.3
    Author: Mendel Kurland
    Author URI: https://ifyouwillit.com
    License: GPL2
@@ -15,6 +15,7 @@
     foreach((get_the_category()) as $category){
         $cat.="<div class='category_name'>".$category->name."</div>";
         $cat.="<div class='category_description'>".category_description($category)."</div>";
+        $cat.="<div class='category_link'><a href='".get_term_link( $category ).">Learn More<a></div>";
         }
         $cat.="</div>";
    return $cat;
