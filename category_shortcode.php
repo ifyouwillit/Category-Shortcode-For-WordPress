@@ -1,7 +1,7 @@
 <?php
    /*
    Plugin Name: Categories for Current Post Shortcode
-   Plugin URI: https://mywebmedic.com
+   Plugin URI: https://github.com/ifyouwillit/Category-Shortcode-For-WordPress
    description: Plugin that creates a shortcode [cat_with_description] to display all categories for the current post.
   a plugin to create awesomeness and spread joy
    Version: 1.2
