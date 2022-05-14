@@ -15,7 +15,7 @@
     foreach((get_the_category()) as $category){
         $cat.="<div class='category_name'>".$category->name."</div>";
         $cat.="<div class='category_description'>".category_description($category)."</div>";
-        $cat.="<div class='category_link'><a href='".get_term_link( $category ).">Learn More</a></div>";
+        $cat.="<div class='category_link'><a href='".get_term_link( $category ).'">Learn More</a></div>";
         }
         $cat.="</div>";
    return $cat;
