@@ -4,7 +4,7 @@
    Plugin URI: https://mywebmedic.com
    description: Plugin that creates a shortcode [cat_with_description] to display all categories for the current post.
   a plugin to create awesomeness and spread joy
-   Version: 1
+   Version: 1.1
    Author: Mendel Kurland
    Author URI: https://ifyouwillit.com
    License: GPL2
