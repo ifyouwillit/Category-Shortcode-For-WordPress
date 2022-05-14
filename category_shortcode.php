@@ -10,13 +10,15 @@
    License: GPL2
    */
 
-   function cat( $atts, $content = null ) {
+   function mwm_category_with_description( $atts, $content = null ) {
+    $cat="<div class='category_container'>";
     foreach((get_the_category()) as $category){
         $cat=$cat."<div class='category_name'>".$category->name."</div>";
         $cat=$cat."<div class='category_description'>".category_description($category)."</div>";
         }
+        $cat="</div">;
    return $cat;
 }
 
-add_shortcode("cat_with_description", "cat");
+add_shortcode("cat_with_description", "mwm_category_with_description");
 ?>
