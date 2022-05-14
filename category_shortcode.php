@@ -13,10 +13,10 @@
    function mwm_category_with_description( $atts, $content = null ) {
     $cat="<div class='category_container'>";
     foreach((get_the_category()) as $category){
-        $cat=$cat."<div class='category_name'>".$category->name."</div>";
-        $cat=$cat."<div class='category_description'>".category_description($category)."</div>";
+        $cat.="<div class='category_name'>".$category->name."</div>";
+        $cat.="<div class='category_description'>".category_description($category)."</div>";
         }
-        $cat="</div>";
+        $cat.="</div>";
    return $cat;
 }
 
