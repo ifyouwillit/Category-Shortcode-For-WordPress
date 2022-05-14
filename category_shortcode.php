@@ -16,7 +16,7 @@
         $cat=$cat."<div class='category_name'>".$category->name."</div>";
         $cat=$cat."<div class='category_description'>".category_description($category)."</div>";
         }
-        $cat="</div">;
+        $cat="</div>";
    return $cat;
 }
 
