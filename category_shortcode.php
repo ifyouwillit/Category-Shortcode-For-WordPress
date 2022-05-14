@@ -1,8 +1,8 @@
 <?php
    /*
-   Plugin Name: Category Shortcode
+   Plugin Name: Categories for Current Post Shortcode
    Plugin URI: https://mywebmedic.com
-   description: >-
+   description: Plugin that creates a shortcode [cat_with_description] to display all categories for the current post.
   a plugin to create awesomeness and spread joy
    Version: 1
    Author: Mendel Kurland
@@ -12,8 +12,8 @@
 
    function cat( $atts, $content = null ) {
     foreach((get_the_category()) as $category){
-        $cat=$cat.$category->name."<br>";
-        $cat=$cat.category_description($category);
+        $cat=$cat."<div class='category_name'>".$category->name."</div>";
+        $cat=$cat."<div class='category_description'>".category_description($category)."</div>";
         }
    return $cat;
 }
